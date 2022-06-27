@@ -1,0 +1,8 @@
+{
+  "name": "gerador-de-testes",
+  "description": "Programa que gera testes automaticamente.",
+  "main": "index.js",
+  "repository": "https://github.com/borinjrjose/gerador-de-testes",
+  "author": "borinjrjose",
+  "license": "MIT"
+}
