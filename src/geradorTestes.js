@@ -5,6 +5,7 @@ import imprimirArvore from './imprimirArvore.js'
 import ensureDirExists from './utils/ensureDirExists.js'
 import imprimirCaminhosUnicos from './imprimirCaminhosUnicos.js'
 import imprimirCasosTeste from './imprimirCasosTeste.js'
+import imprimirCaminhosSecretos from './imprimirCaminhosSecretos.js'
 
 const geradorTestes = (argv) => {
   if (argv.length < 4) {
@@ -32,6 +33,8 @@ const geradorTestes = (argv) => {
   const mapeamentoEventos = csvParse(readFileSync(mapeamento, 'utf-8'))
 
   imprimirCasosTeste(arvoreTransicao, mapeamentoEventos)
+
+  imprimirCaminhosSecretos(arvoreTransicao, mapeamentoEventos, parsedTabelaTransicao)
 }
 
 export default geradorTestes
