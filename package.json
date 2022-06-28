@@ -1,8 +1,15 @@
 {
   "name": "gerador-de-testes",
-  "description": "Programa que gera testes automaticamente.",
-  "main": "index.js",
+  "description": "Programa que gera testes automaticamente a partir de uma tabela de transição e um mapeamento.",
+  "main": "src/App.js",
   "repository": "https://github.com/borinjrjose/gerador-de-testes",
+  "type": "module",
+  "scripts": {
+    "start": "node src/App.js"
+  },
   "author": "borinjrjose",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "d3": "^7.5.0"
+  }
 }
