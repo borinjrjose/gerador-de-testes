@@ -3,6 +3,7 @@ import { csvParse } from 'd3'
 import gerarArvore from './gerarArvore.js'
 import imprimirArvore from './imprimirArvore.js'
 import ensureDirExists from './utils/ensureDirExists.js'
+import imprimirCaminhosUnicos from './imprimirCaminhosUnicos.js'
 
 const geradorTestes = (argv) => {
   if (argv.length < 4) {
@@ -24,6 +25,8 @@ const geradorTestes = (argv) => {
   ensureDirExists('dist')
 
   imprimirArvore(arvoreTransicao)
+
+  imprimirCaminhosUnicos(arvoreTransicao)
 }
 
 export default geradorTestes
