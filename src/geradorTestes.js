@@ -2,6 +2,7 @@ import { readFileSync } from 'fs'
 import { csvParse } from 'd3'
 import gerarArvore from './gerarArvore.js'
 import imprimirArvore from './imprimirArvore.js'
+import ensureDirExists from './utils/ensureDirExists.js'
 
 const geradorTestes = (argv) => {
   if (argv.length < 4) {
@@ -19,6 +20,8 @@ const geradorTestes = (argv) => {
   const parsedTabelaTransicao = csvParse(readFileSync(tabelaTransicao, 'utf-8'))
 
   const arvoreTransicao = gerarArvore(parsedTabelaTransicao)
+
+  ensureDirExists('dist')
 
   imprimirArvore(arvoreTransicao)
 }
