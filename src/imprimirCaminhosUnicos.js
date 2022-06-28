@@ -18,4 +18,5 @@ const imprimirCaminhosUnicos = (arvore) => {
     if (err) console.error(err)
   })
 }
+
 export default imprimirCaminhosUnicos
