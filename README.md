@@ -42,6 +42,15 @@ yarn start <estados>.csv <mapeamento>.csv
 
 Onde `<estados>` e `<mapeamento>` representam, respectivamente, os nomes dos arquivos que contêm a `tabela de transição` e o `mapeamento`.
 
+### Nota
+
+Para o exemplo, basta rodar o seguinte comando:
+
+```bash
+# Rodar programa com os arquivos na pasta example
+yarn start example/transicao.csv example/mapeamento.csv
+```
+
 ## Saída
 
 Ao terminar de executar, o programa gerará os seguintes arquivos dentro da pasta `dist`:
