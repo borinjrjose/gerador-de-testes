@@ -1,0 +1,6 @@
+system proxy,SDevice
+home,SDevice.home()
+wrong password,SDevice.login("wrong";"wrong")
+correct password,SDevice.login("login";"password")
+lock button,SDevice.lockButton()
+long lock button,SDevice.longLockButton()

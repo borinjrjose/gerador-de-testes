@@ -1,0 +1,4 @@
+states/events,home,wrong password,correct password,lock button,long lock button
+OFF,LOCKED,,,,
+LOCKED,,LOCKED,UNLOCKED,,OFF
+UNLOCKED,,,,LOCKED,OFF
