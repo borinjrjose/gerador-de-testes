@@ -1,14 +1,14 @@
-# Descrição
+# :speech_balloon: Descrição
 
 Gerador de testes para a disciplina SIN5022 - Teste de Software.
 
-## Requisitos
+## :pencil: Requisitos
 
 Para rodar o programa, é necessário estar com os programas [Node.js](https://nodejs.org/en/) e [Yarn](https://yarnpkg.com/) instalados na máquina.
 
 Adicionalmente, é recomendado possuir [Git](https://git-scm.com/) instalado para clonar o repositório.
 
-## Setup
+## :wrench: Setup
 
 Rodar os seguintes comandos:
 
@@ -23,15 +23,15 @@ cd gerador-de-testes
 yarn install
 ```
 
-## Entrada
+## :inbox_tray: Entrada
 
 Dois arquivos `csv` que representam a `tabela de transição` do sistema e o `mapeamento` de eventos para funções do programa, conforme os arquivos encontrados na pasta [example](./example/).
 
-### Nota
+### :pushpin: Nota
 
 Os arquivos de `mapeamento` devem possuir os parâmetros das funções separados por ponto e vírgula (;).
 
-## Iniciar o programa
+## :minidisc: Iniciar o programa
 
 Jogar os arquivos de entrada dentro da pasta raiz do projeto e rodar o seguinte comando:
 
@@ -42,7 +42,7 @@ yarn start <estados>.csv <mapeamento>.csv
 
 Onde `<estados>` e `<mapeamento>` representam, respectivamente, os nomes dos arquivos que contêm a `tabela de transição` e o `mapeamento`.
 
-### Nota
+### :pushpin: Nota
 
 Para o exemplo, basta rodar o seguinte comando:
 
@@ -51,7 +51,7 @@ Para o exemplo, basta rodar o seguinte comando:
 yarn start example/transicao.csv example/mapeamento.csv
 ```
 
-## Saída
+## :outbox_tray: Saída
 
 Ao terminar de executar, o programa gerará os seguintes arquivos dentro da pasta `dist`:
 
